@@ -10,6 +10,7 @@ sqlalchemy = "*"
 flask-migrate = "*"
 psycopg2-binary = "*"
 alembic = "*"
+flask-wtf = "*"
 
 [dev-packages]
 black = "*"
