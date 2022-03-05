@@ -13,7 +13,6 @@ class Animal(db.Model):
     species = db.Column(db.String(30))
     breed = db.Column(db.String(30))
     birth_date = db.Column(db.DateTime())
-    procedures = db.relationship("Procedure", backref="animal", lazy="dynamic")
 
     def __repr__(self):
         return f"animal with name {self.name}"

@@ -9,3 +9,6 @@ migrate:
 db upgrade:
 	pipenv run flask db upgrade
 
+shell:
+	pipenv run flask shell
+
