@@ -2,9 +2,14 @@
 
 {% block content %}
 
-<p>тут будет информация о животном</p>
+<div>
+    <p>Имя животного: {{ context.animal.name }}</p>
+    <p>Вид животного: {{ context.animal.species }}</p>
+    <p>Порода: {{ context.animal.breed }}</p>
+    <p>Дата рождения: {{ context.animal.birth_date }}</p>
+</div>
 
-<p>здесь информация о последней вакцинации</p>
+<p>{{ context.vaccination }}</p>
 <a href="/animal/procedure_list">список вакцинаций</a>
 <a href="/add_procedure">добавить информацию о новой вакцинации</a>
 
